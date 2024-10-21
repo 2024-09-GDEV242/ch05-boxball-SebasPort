@@ -6,10 +6,10 @@ import java.awt.geom.*;
  * Class Canvas - a class to allow for simple graphical 
  * drawing on a canvas.
  * 
- * @author Michael Kölling (mik)
- * @author Bruce Quig
+ * @author Sebastian Portillo
+ * 
  *
- * @version 2016.02.29
+ * @version 10.20.24
  */
 
 public class Canvas
@@ -39,6 +39,10 @@ public class Canvas
     public Canvas(String title, int width, int height)
     {
         this(title, width, height, Color.white);
+    }
+    public void drawRectangle (int y1, int x1, int height, int width){
+        graphic.drawRect(y1,x1,width,height);
+        canvas.repaint();
     }
 
     /**
